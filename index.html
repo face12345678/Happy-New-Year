@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>สวัสดีปีใหม่ 💕</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="hy.css">
+</head>
+
+<body>
+
+<div class="wrap">
+  <div class="card">
+
+    <!-- ภาษาไทย -->
+    <div class="lang th active">
+      <h1>🎉 สวัสดีปีใหม่ 🎉</h1>
+      <div class="year">2026</div>
+      <div class="text">
+        ขอให้ปีใหม่นี้<br>
+        น่ารักกับเธอทุกวัน 💖<br>
+        ยิ้มเยอะๆ โชคดีตลอดปี ✨
+      </div>
+      <button class="btn" onclick="openPopup()">กดรับความน่ารัก 🥰</button>
+    </div>
+
+    <!-- English -->
+    <div class="lang en">
+      <h1>🎉 Happy New Year 🎉</h1>
+      <div class="year">2026</div>
+      <div class="text">
+        Wishing you happiness 💖<br>
+        smiles every day ✨
+      </div>
+      <button class="btn" onclick="openPopup()">Get the cuteness 🥰</button>
+    </div>
+
+    <!-- ปุ่มสลับภาษา -->
+    <div class="lang-switch">
+      <button onclick="setLang('th')">TH</button>
+      <button onclick="setLang('en')">EN</button>
+    </div>
+
+  </div>
+</div>
+
+<!-- POPUP -->
+<div class="popup" id="popup" onclick="closePopup()">
+  <div class="popup-box" onclick="event.stopPropagation()">
+    <div class="close" onclick="closePopup()">✕</div>
+    <img src="https://github.com/face12345678/Happy-New-Year/blob/main/5fc1bb7d-e5b5-4ce0-8623-d1e1acfb6d40.jpg?raw=true.jpg" alt="cute">
+  </div>
+</div>
+
+<script src="ht.js"></script>
+</body>
+</html>
